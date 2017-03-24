@@ -22,6 +22,8 @@ Guideline
 語言細節
 ----------
 
+* [PHP](/language/php/introdution.md)
+
 1. Coding Standard (style、pattern ...)
 2. Framework
 
