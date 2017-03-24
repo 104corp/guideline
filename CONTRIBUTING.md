@@ -8,7 +8,7 @@ CONTRIBUTING
 
 ### 修改文件流程
 
-Git 流程採用 TBD ( Trunk Based Development ， [參考網頁](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/) ) 。 Mainline 名稱固定為 `master` ，並設定成保護分支（不能 force upload ）。
+Git 流程採用 TBD（Trunk Based Development，[參考網頁](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/)）。 Mainline 名稱固定為 `master` ，並設定成保護分支（不能 force upload）。
 
 Git Commit 的內容沒有特別規範，但請先參考[這份文件](https://blog.louie.lu/2017/03/21/%E5%A6%82%E4%BD%95%E5%AF%AB%E4%B8%80%E5%80%8B-git-commit-message/)。
 
@@ -26,6 +26,8 @@ Style
 
 ### 文章內容
 
+Guideline 使用[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md)來統一排版樣式，以下是一些常用樣式的說明：
+
 文章內的標點符號請一律使用全型標點符號，除非是引文為全英文，如：
 
 ```markdown
@@ -34,15 +36,15 @@ Style
 > Less is More.
 ```
 
-承上，中文和全型標點符號，與英文和數字之間，必定要間格一個半形空格，如：
+承上，中文與英文和數字之間，必定要間格一個半形空格，如：
 
 ```markdown
-CI 是一個觀念； CI 也是一種文化。而理論上， CI 執行 1 次或無數次，都會得到相同的結果。
+CI 是一個觀念；CI 也是一種文化。而理論上， CI 執行 1 次或無數次，都會得到相同的結果。
 ```
 
 ### 標題
 
-文件的主標題（ `h1` ）與副標題（ `h2` ）一律使用下面的 style ：
+文件的主標題（`h1`）與副標題（`h2`）一律使用下面的 style ：
 
 ```markdown
 主標題
