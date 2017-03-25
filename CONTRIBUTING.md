@@ -3,6 +3,8 @@ CONTRIBUTING
 
 此文件說明該如何一起協作，讓此指南更加完整！
 
+以下內容，如果沒有特別說明的話，一律都是**必須**要遵守的。
+
 基本規範
 ----------
 
@@ -10,7 +12,7 @@ CONTRIBUTING
 
 Git 流程採用 TBD（Trunk Based Development，[參考網頁](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/)）。 Mainline 名稱固定為 `master` ，並設定成保護分支（不能 force upload）。
 
-Git Commit 的內容沒有特別規範，但請先參考[這份文件](https://blog.louie.lu/2017/03/21/%E5%A6%82%E4%BD%95%E5%AF%AB%E4%B8%80%E5%80%8B-git-commit-message/)。
+Git Commit 的內容沒有特別規範，**建議**參考[這份文件](https://blog.louie.lu/2017/03/21/%E5%A6%82%E4%BD%95%E5%AF%AB%E4%B8%80%E5%80%8B-git-commit-message/)。
 
 如果對文件有建議修改的內容，可使用 [Fork + Pull Request](https://git-scm.com/book/zh-tw/v2/GitHub-%E5%8F%83%E8%88%87%E4%B8%80%E5%80%8B%E5%B0%88%E6%A1%88) 並使用 Squash and Merge 合併。另外發 PR 需要指定 Reviewer 與 Assignees。
 
@@ -87,7 +89,7 @@ CI 是一個觀念；CI 也是一種文化。而理論上， CI 執行 1 次或�
     $var = new stdClass();
     ```
 
-如果是要終端機指令需要使用原始碼呈現的話，可以使用 bash 語言。如：
+如果是要終端機指令需要使用原始碼呈現的話，**建議**使用 bash 語言。如：
 
 ```bash
 # 註解
@@ -97,7 +99,7 @@ $ some-command
 
 ### 連結
 
-連結盡可能使用[參考形式的連結][]表示，比方說：
+連結**可以**使用[參考形式的連結][]表示，比方說：
 
 ```markdown
 [Composer][] 是一個強大的 PHP 套件管理工具
