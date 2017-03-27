@@ -20,7 +20,7 @@ Guideline
 2. [Source Repository](/source-repository/introdution.md) - Git 相關規範：commit message、flow
 3. [Document](/document.md)
 4. Code Review - 如何進行 Code Review
-5. Integration - 如何整合，包括如何測試
+5. [Integration](/integration/introdution.md) - 如何整合，包括如何測試
 6. Delivery - 如何交付可用的軟體
 7. Deployment - 如何佈署
 8. Report - 報告包括什麼
