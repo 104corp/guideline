@@ -35,6 +35,7 @@ Guideline
 ----------
 
 * [PHP](/language/php/introdution.md)
+* [Java](/language/java/introduction.md)
 
 1. Coding Standard (style、pattern ...)
 2. Framework
