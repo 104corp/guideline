@@ -12,13 +12,13 @@ Windows 可以參考保哥的[30天精通Git版本控管系列 第2篇](http://i
 
 Debian / Ubuntu 系列可以使用 `apt-get` 指令安裝。
 
-```bash
+```
 $ sudo apt-get install git
 ```
 
 Fedora / CentOS 系列可以使用 `yum` 指令安裝。
 
-```bash
+```
 $ yum install git-core
 ```
 
@@ -26,7 +26,7 @@ $ yum install git-core
 
 確認有先安裝 [Homebrew](https://brew.sh/index_zh-tw.html) 後，使用下面指令安裝。
 
-```bash
+```
 $ brew install git
 ```
 
@@ -43,9 +43,9 @@ $ brew install git
 設定
 ----------
 
-第一次安裝 Git 一定要設定使用者名稱和 email 才能開始 commit ，範例如下：
+第一次安裝 Git **必須**要設定使用者名稱和 email 才能開始 commit ，範例如下：
 
-```bash
+```
 $ git config --global user.name "miles.chou"
 $ git config --global user.email "miles.chou@104.com.tw"
 ```
