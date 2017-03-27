@@ -25,20 +25,27 @@ Guideline
 7. Deployment - 如何佈署
 8. Report - 報告包括什麼
 
-語言共同指南
+實作指南
 ----------
 
-1. Web 程式注意事項
-2. Build tools
+* Web server
+* API server
+* Worker
 
-語言細節
+
+語言指南
 ----------
+
+### 共同指南
+
+* Build tools
+
+### 語言細節
 
 * [PHP](/language/php/introdution.md)
 * [Java](/language/java/introdution.md)
-
-1. Coding Standard (style、pattern ...)
-2. Framework
+* JavaScript - Frontend
+* Node - Backend
 
 CONTRIBUTING
 ----------
