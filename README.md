@@ -8,7 +8,7 @@ Guideline
 | MUST | **必須** |
 | MUST NOT | **禁止** |
 | SHOULD | **建議** |
-| SHOULD | **不建議** |
+| SHOULD NOT | **不建議** |
 | MAY | **可以** |
 
 如果有要表達 RFC 2119 文件裡的意思時，將會使用**粗體**表示。
