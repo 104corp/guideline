@@ -1,7 +1,7 @@
 Guideline
 ==========
 
-本份指南會使用到 [RFC 2119][] 的關鍵字，定義可以參考 RFC 2119 文件說明。以下列出中文對照：
+本份指南會使用到 [RFC 2119][] 的關鍵字，以下列出原文與中文的對照：
 
 | 原文 | 中文 |
 |:--------:|:------:|
@@ -32,7 +32,6 @@ Guideline
 * API server
 * Worker
 
-
 語言指南
 ----------
 
@@ -44,8 +43,7 @@ Guideline
 
 * [PHP](/language/php/introdution.md)
 * [Java](/language/java/introdution.md)
-* JavaScript - Frontend
-* Node - Backend
+* JavaScript
 
 CONTRIBUTING
 ----------
