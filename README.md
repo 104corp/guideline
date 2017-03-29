@@ -31,6 +31,7 @@ Guideline
 * Web server
 * API server
 * Worker
+* [Library](/library.md)
 
 語言指南
 ----------
