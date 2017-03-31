@@ -87,3 +87,14 @@ Finally, run PHP built-in server, and you can see `http://localhost:8080` on bro
 這份文件提供了完整的安裝與驗證方法。一開始會說明有哪些必要的工具，如果沒有的話可以去哪裡得到相關資訊，接著說明如何下安裝指令，最後則是說明如何驗證。
 
 **建議**這份文件也可以寫在專案目錄下的 `README.md` 檔裡。
+
+協作文件
+----------
+
+專案會因為需求，而有不同的規範，如不同的 [workflow](/source-repository/workflow.md) 或 coding convention 。在這個前提下，**必須**要有一份文件說明此專案是採用何種 workflow 或 coding convention ，這樣才會方便讓其他人了解如何協作。
+
+很明顯地，在新進成員到團隊時，這份文件將會非常重要；除此之外，有了這份文件，也會讓其他喜歡寫 code 的路人較有意願為這個專案付出。
+
+**建議**這份文件可以寫在專案目錄下的 `CONTRIBUTING.md` 檔裡。
+
+> 本專案也有一份 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 可以參考。
