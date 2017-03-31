@@ -1,5 +1,4 @@
-Source Repository
-==========
+# Source Repository
 
 這個章節將會說明原始碼存放的規則細節，與說明如何使用版本控制系統等。
 

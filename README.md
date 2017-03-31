@@ -1,5 +1,4 @@
-Guideline
-==========
+# Guideline
 
 本份指南會使用到 [RFC 2119][] 的關鍵字，以下列出原文與中文的對照：
 
@@ -13,8 +12,7 @@ Guideline
 
 如果有要表達 RFC 2119 文件裡的意思時，將會使用**粗體**表示。
 
-通用指南
-----------
+## 通用指南
 
 1. 開發流程／模式
 2. [Source Repository](/source-repository/introdution.md) - Git 相關規範：commit message、flow
@@ -25,16 +23,14 @@ Guideline
 7. Deployment - 如何佈署
 8. Report - 報告包括什麼
 
-實作指南
-----------
+## 實作指南
 
 * Web server
 * API server
 * Worker
 * [Library](/library.md)
 
-語言指南
-----------
+## 語言指南
 
 ### 共同指南
 
@@ -46,8 +42,7 @@ Guideline
 * [Java](/language/java/introdution.md)
 * JavaScript
 
-CONTRIBUTING
-----------
+## 如何協作
 
 如有興趣共同編輯此文件，可以參考[這份文件](/CONTRIBUTING.md)。
 

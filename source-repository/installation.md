@@ -1,8 +1,6 @@
-Git 環境建置
-==========
+# Git 環境建置
 
-安裝 Git 基本元件
-----------
+## 安裝 Git 基本元件
 
 ### Windows
 
@@ -40,8 +38,7 @@ $ brew install git
 
 [官網](https://git-scm.com/downloads/guis/)也有提供相關資訊可以參考。
 
-設定
-----------
+## 設定
 
 安裝好後，應該就能執行 Git 指令了，可以打開終端機介面輸入 `git --version` 指令確認：
 
@@ -85,13 +82,11 @@ $ git config --global core.ignorecase false
 $ git config alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'"
 ```
 
-終端機設定
-----------
+## 終端機設定
 
 **可以**參考 [ihower 的文章](https://ihower.tw/blog/archives/5436)修改 `~/.bash_profile` 後，會看到一個較乾淨的終端機介面，操作也比較方便。
 
-Auto Completion
-----------
+## Auto Completion
 
 Ubuntu 預設就會有 Auto Completion 了。
 
