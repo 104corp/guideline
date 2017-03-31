@@ -23,7 +23,7 @@ Document
 
 ```markdown
 System Requirement
-------------------
+----------
 
 ### Run time requirement
 
@@ -49,7 +49,8 @@ System Requirement
 範例如下：
 
 ```markdown
-## Installation
+Installation
+----------
 
 Make sure you have `composer` and `npm` command:
 
