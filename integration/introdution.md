@@ -42,3 +42,5 @@
 * [持續整合工程師應遵循的十項要領（上）](http://teddy-chen-tw.blogspot.tw/2012/07/blog-post_04.html) | Teddy Chen
 * [持續整合工程師應遵循的十項要領（下）](http://teddy-chen-tw.blogspot.tw/2012/07/blog-post_05.html) | Teddy Chen
 * [CI 從入門到入坑](https://github.com/MilesChou/book-intro-of-ci) | Miles Chou
+* [Continuous Integration: Improving Software Quality and Reducing Risk](http://www.informit.com/store/continuous-integration-improving-software-quality-and-9780321336385?ranMID=24808)
+* [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) | Martin Fowler
