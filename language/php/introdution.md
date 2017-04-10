@@ -1,5 +1,17 @@
 # PHP
 
+PHP 已有許多可信的第三方整理出建議的參考規範，如果有實作下列功能的需求，請優先考慮 PSR-FIG ：
+
+* Logger: [PSR-3: Logger Interface](http://www.php-fig.org/psr/psr-3/)
+* Cache: [PSR-6: Caching Interface](http://www.php-fig.org/psr/psr-6/) 、 [PSR-16: Simple Cache](http://www.php-fig.org/psr/psr-16/)
+* HTTP Message: [PSR-7: HTTP Message Interface](http://www.php-fig.org/psr/psr-7/)
+* Hyperlink: [PSR-13: Hypermedia Links](http://www.php-fig.org/psr/psr-13/)
+
+還有一些雖然還在草稿或審查階段，但都是值得參考的：
+
+* Dependency Injection: [PSR-11: Container Interface](https://github.com/container-interop/fig-standards/blob/master/proposed/container.md)
+* PHPDoc Standard: [PSR-5: PHPDoc Standard](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md)
+
 ## 程式碼風格規範
 
 開發基本上**必須**遵守 [PSR-2](http://www.php-fig.org/psr/psr-2/) 規範。
