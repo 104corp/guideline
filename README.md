@@ -26,9 +26,9 @@
 ## 實作指南
 
 * Web server
-* API server
+* [API](/implement/api.md)
 * Worker
-* [Library](/library.md)
+* [Library](/implement/library.md)
 
 ## 語言指南
 
