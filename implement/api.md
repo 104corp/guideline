@@ -56,14 +56,16 @@ Swagger
 
 ## Monitor
 
+
 # Advanced
 ## Security Requirement
 * HTTPS only  
-** Including Private API & Public API.  
-** Using Public CA (not Self-Signed CA).  
+	* Including Private API & Public API.  
+	* Using Public CA (not Self-Signed CA).  
 * Sensitive Information (AES)  
-** All sensitive information need to be encrypted with AES module, before storing to disks (including databases).
+	* All sensitive information need to be encrypted with AES module, before storing to disks (including databases).
 ## SDK
+![SDK](http://columns.chicken-house.net/wp-content/uploads/2016/10/apisdk-02-arch.png)
 
 ## 參考資料
 
