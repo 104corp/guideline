@@ -7,7 +7,7 @@
 * PUT（U）：修改
 * DELETE（D）：刪除
 * PATCH：更新部份內容
-* 其它還有一些較少用到的，可參考 Wikipedia: [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods "Request Method")
+* 其它還有一些較少用到的，可參考 Wikipedia：[Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods "Request Method")
 
 ### URI Naming
 ROA（Resource-oriented architecture）
