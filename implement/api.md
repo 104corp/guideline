@@ -1,6 +1,9 @@
 # API Implement Guideline
 
-## RESTful
+## REST
+REST APIs SHOULD follow consistent design guidelines to make using them easy and intuitive.  
+This document establishes the guidelines REST APIs SHOULD follow so RESTful interfaces are developed consistently.
+
 ### HTTP Method
 * POST（C）：新增
 * GET（R）：讀取
