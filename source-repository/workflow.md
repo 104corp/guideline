@@ -13,7 +13,7 @@ Git Flow 適用於正式發佈後，到 end user 時間**較長**的專案，如
 
 ## GitHub Flow
 
-GitHub Flow 適用於正式發佈後，到 end user 時間**較短**的專案，如 Web 。
+[GitHub Flow][] 適用於正式發佈後，到 end user 時間**較短**的專案，如 Web 。
 
 預設開發最新 branch 為 `master` 。任何修改**必須**開分支處理，最後合併回 `master` branch 的時候，需使用 `--no-ff` 參數。當合併發生任何衝突的時候，**必須**立即停止，先做 rebase 後再合併。
 
@@ -37,5 +37,8 @@ GitLab Flow 適合用在多環境佈署的專案，如專案需要佈署 product
 ## 參考資料
 
 * [分⽀開發流程和策略](https://ihower.tw/git/files/ihower-git-workflow.pdf) | ihower
+* [GitHub Flow][] | GitHub
 * [GitLab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/) | GitLab
 * [What is Trunk Based Development?](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/) | Paul Hammant
+
+[GitHub Flow]: https://guides.github.com/introduction/flow/
