@@ -10,7 +10,7 @@ ROA（Resource-oriented architecture）
 Keep your base URL simple and intuitive
  
 * Resource**必須**為複數名詞
-* URI**禁止**使用動詞，對於API的動作請用HTTP Method表示
+* URI**禁止**使用動詞，對於API的動作請用HTTP Method
 
 ### HTTP Method
 * POST（C）：新增
@@ -95,6 +95,7 @@ example:
 	* Using Public CA (not Self-Signed CA).  
 * Sensitive Information (AES)  
 	* All sensitive information need to be encrypted with AES module, before storing to disks (including databases).
+
 ## SDK
 ![SDK](http://columns.chicken-house.net/wp-content/uploads/2016/10/apisdk-02-arch.png)
 
