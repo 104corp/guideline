@@ -4,16 +4,25 @@
 REST APIs SHOULD follow consistent design guidelines to make using them easy and intuitive.  
 This document establishes the guidelines REST APIs SHOULD follow so RESTful interfaces are developed consistently.
 
+
+### URI Naming
+ROA（Resource-oriented architecture）  
+Keep your base URL simple and intuitive
+ 
+* Resource**必須**為複數名詞
+* URI**禁止**使用動詞，對於API的動作請用HTTP Method表示
+
 ### HTTP Method
 * POST（C）：新增
-* GET（R）：讀取
-* PUT（U）：修改
-* DELETE（D）：刪除
+* GET（R）：讀取 (safe & idempotent)
+* PUT（U）：修改 (idempotent)
+* DELETE（D）：刪除 (idempotent)
 * PATCH：更新部份內容
 * 其它還有一些較少用到的，可參考 Wikipedia：[Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods "Request Method")
 
-### URI Naming
-ROA（Resource-oriented architecture）
+
+example.  
+![](https://d38wlcdzwz02m5.cloudfront.net/about/cdn/farfuture/nE-mwHmuKPpcTXsv9uN-C3be1AprziBfxsYlNaJOC9o/mtime:1441380349/sites/mktg-new/files/Prag_REST_CRUD_thumb.png)
 
 ### HTTP Response State
 
@@ -62,18 +71,21 @@ Avoid XML interface unless legacy requirement(s).
 
 
 ## Version
-Given a version number MAJOR.MINOR.PATCH, increment the:
+API版本設計的目的在於新舊並存，當發生**不可相容**的情況時，可減少客戶端的衝擊。  
 
-MAJOR version when you make incompatible API changes,  
-MINOR version when you add functionality in a backwards-compatible manner, and  
-PATCH version when you make backwards-compatible bug fixes.  
-Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+API版本設計將增加管理上的複雜度，請謹慎考量。
 
+**建議** Version in header.  
+example:
+<pre><code>    GET /user/1 HTTP/1.1
+	Host: myapplication.com
+	Accept: application/vnd.myapplication.user.v1+json
+</code></pre>
+
+[Where to put a version number?](http://allegro.tech/2015/01/Content-headers-or-how-to-version-api.html).  
 
 ## Document
-Swagger
-
-## Monitor
+[Swagger][] is the world’s largest framework of API developer tools for the OpenAPI Specification(OAS)
 
 
 # Advanced
@@ -91,4 +103,8 @@ Swagger
 * [API Guidelines 與 APIM Policy](http://sysblog.104.com.tw/notice.php?op=notice_view&id=17609) | DK
 * [HTTP Status Codes](http://www.restapitutorial.com/httpstatuscodes.html)
 * [Semantic Versioning 2.0.0](http://semver.org/)
-* [Swagger](http://swagger.io/)
+* [Swagger][]
+
+
+
+[Swagger]:http://swagger.io/
