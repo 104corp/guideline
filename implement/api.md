@@ -13,7 +13,7 @@ Keep your base URL simple and intuitive
 * URI**禁止**使用動詞，對於API的動作請用HTTP Method
 
 ### HTTP Method
-API實作行為操作必須使用適當的HTTP Method，並且必須遵Method的Idempotent和Safe特性。
+API實作行為操作必須使用適當的HTTP Method，並且必須遵守Method的Idempotent和Safe特性。
 * Safe Methods: Request不會造成資源的狀態改變，以API實作可視為唯讀的request。   
 [RFC-7231#4.2.1](https://tools.ietf.org/html/rfc7231#section-4.2.1)
 
