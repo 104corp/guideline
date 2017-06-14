@@ -13,11 +13,22 @@ Keep your base URL simple and intuitive
 * URI**禁止**使用動詞，對於API的動作請用HTTP Method
 
 ### HTTP Method
-* POST（C）：新增
-* GET（R）：讀取 (safe & idempotent)
-* PUT（U）：修改 (idempotent)
-* DELETE（D）：刪除 (idempotent)
-* PATCH：更新部份內容
+API實作行為操作必須使用適當的HTTP Method，並且必須遵守Method的Idempotent和Safe特性。
+* Safe Methods: Request不會造成資源的狀態改變，以API實作可視為唯讀的request。   
+[RFC-7231#4.2.1](https://tools.ietf.org/html/rfc7231#section-4.2.1)
+
+* Idempotent(冪等) Methods: Request一次和多次造成的結果都相同
+，例如`DELETE /article/1234`的結果是id是1234的article資料被刪除，相同請求再執行多次的結果就是id是1234的article資料不存在，而不是造成更多的資料被刪除。
+Idempotent Methods可以Retry，例如，如果client發送了一個request，在收到任何回應之前發生了斷線，則client可以建立新的連線並retry idempotent request。   
+[RFC-7231#4.2.2](https://tools.ietf.org/html/rfc7231#section-4.2.2)
+
+|Method|CRUD|Description|Idempotent|Safe|
+|:---:|:---:|---|:---:|:---:|
+|GET   |Read|用於取得資源內容|Y|Y|
+|POST  |Create|用於新建資源|N|N|
+|PATCH ([RFC-5789](https://tools.ietf.org/html/rfc5789))|Update|用於更新資源或部分內容|N|N|
+|PUT   |Replace or Create|用於取代新建資源 (Payload必須是完整的內容)|Y|N|
+|DELETE|Delete|用於刪除資源|Y|N|
 * 其它還有一些較少用到的，可參考 Wikipedia：[Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods "Request Method")
 
 
