@@ -19,7 +19,7 @@ API實作行為操作必須使用適當的HTTP Method，並且必須遵Method的
 
 * Idempotent(冪等) Methods: Request一次和多次造成的結果都相同
 ，例如`DELETE /article/1234`的結果是id是1234的article資料被刪除，相同請求再執行多次的結果就是id是1234的article資料不存在，而不是造成更多的資料被刪除。
-Idempotent Methods可以Retry，例如，如果clint發送了一個request，在收到任何回應之前發生了斷線，則clint可以建立新的連線並retry idempotent request。   
+Idempotent Methods可以Retry，例如，如果client發送了一個request，在收到任何回應之前發生了斷線，則client可以建立新的連線並retry idempotent request。   
 [RFC-7231#4.2.2](https://tools.ietf.org/html/rfc7231#section-4.2.2)
 
 |Method|CRUD|Description|Idempotent|Safe|
