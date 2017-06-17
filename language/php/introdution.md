@@ -14,7 +14,9 @@ PHP 已有許多可信的第三方整理出建議的參考規範，如果有實�
 
 ## 程式碼風格規範
 
-開發基本上**必須**遵守 [PSR-2](http://www.php-fig.org/psr/psr-2/) 規範。
+開發基本上**必須**遵守 [PSR-2](http://www.php-fig.org/psr/psr-2/) 規範。其他項目如下列：
+
+* [PHP Document](phpdoc.md)
 
 ### Array 實字表示
 
