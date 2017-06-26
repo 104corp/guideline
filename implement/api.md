@@ -10,7 +10,16 @@ ROA（Resource-oriented architecture）
 Keep your base URL simple and intuitive
  
 * Resource**必須**為複數名詞
-* URI**禁止**使用動詞，對於API的動作請用HTTP Method
+* URI**不建議**使用動詞，對於API的動作請用HTTP Method
+
+以下節錄自〈[REST API Design Rulebook][]〉說明URI使用動詞之時機
+
+> Controller
+>
+> A controller resource models a procedural concept. Controller resources are like executable functions, with parameters and return values; inputs and outputs.  
+Like a traditional web application’s use of HTML forms, a REST API relies on controller resources to perform application-specific actions that cannot be logically mapped to one of the standard methods (create, retrieve, update, and delete, also known as CRUD).  
+Controller names typically appear as the last segment in a URI path, with no child resources to follow them in the hierarchy. The example below shows a controller resource that allows a client to resend an alert to a user:  
+POST /alerts/245743/resend
 
 ### HTTP Method
 API實作行為操作必須使用適當的HTTP Method，並且必須遵守Method的Idempotent和Safe特性。
@@ -98,6 +107,86 @@ example:
 ## Document
 [Swagger][] is the world’s largest framework of API developer tools for the OpenAPI Specification(OAS)
 
+### API basic information in swagger (**Must** have)
+
+<pre><code>
+swagger: "2.0"
+info:
+  description: "Describe your API "
+  version: "Your API version. e.g. 1.0.0"
+  title: "Swagger Example"
+  contact: contact window for this API.
+	name: "Example contact name"
+	email: "service@example.com"
+host: "API host to access e.g. ​https://api.104.com"
+basePath: "API endpoint e.g. /activities"
+consumes: "only support JSON format e.g. application/json"
+produces: "only support JSON format e.g. application/json"
+schemes: "only support https"
+
+</code></pre>
+
+### API path(interface,endpoint) definition in swagger (attributes **Must** have)
+<pre><code>
+paths:
+	/users: define methods below for this interface
+		get:
+			description: "Choose "description" instead "summary" to describe everything about this endpoint, the function, the notice, the limitation; support markdown"
+			parameters:
+				in: "parameter type, query, path, body,header or form"
+				name: "parameter name"
+				description: "explain what is this parameter for, explanation should be easily understood by API user"
+				required: is the parameter required or not
+				type: "parameter data type for path and query parameters, e.g. integer"
+				format: "follow parameter data type above"
+				schema: body parameter might have referred to a object
+					$ref: "#/definitions/User"
+			responses: responses definition, should follow http status code
+</code></pre>
+
+### Responses sample
+<pre><code>
+responses:
+	'200':
+		description: Successful Response
+		schema:
+			$ref: '#/definitions/PagingModel'
+		x-generic: 'User'
+		examples:
+			application/json:
+				data:
+					$ref: '#/definitions/User'
+				...
+</code></pre>
+
+If you defined a **wrapper** for your responses, just like example above, the real response model is wrapped inside of PagingModel. In this case, you should declare a self-defined attribute, **"
+x-generic"** , to know which model should be present in the response sample code.
+
+### API Object definition in swagger (must have, except "description")
+<pre><code>
+definitions:
+	User: **_object name_**
+		description: describe the model (optional)
+		type: "object"
+		required: **_required properties definition_**
+			name
+			address
+		properties: **_define attributes in object model_**
+			name:
+				type: string
+			address:
+				$ref: '#/definitions/Address'
+			age:
+				type: integer
+				format: int32
+				minimum: 0
+		example: **_provide example value for each attributes_**
+		name: Puma
+		address: Taipei city
+		age: 20
+	Address:
+		...
+</code></pre>
 
 # Advanced
 ## Security Requirement
@@ -115,7 +204,9 @@ example:
 * [HTTP Status Codes](http://www.restapitutorial.com/httpstatuscodes.html)
 * [Semantic Versioning 2.0.0](http://semver.org/)
 * [Swagger][]
+* [REST API Design Rulebook][]
 
 
 
 [Swagger]:http://swagger.io/
+[REST API Design Rulebook]:https://doc.lagout.org/programmation/Webservers/REST%20API%20Design%20Rulebook%20-%20Masse%20-%20O%27Reilly%20%282012%29/REST%20API%20Design%20Rulebook%20-%20Masse%20-%20O%27Reilly%20%282012%29.pdf
