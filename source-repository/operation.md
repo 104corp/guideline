@@ -1,5 +1,7 @@
 # Git 操作規範與建議
 
+## 基本必學指令
+
 基礎必學指令一覽，如有不清楚用途與使用時機的指令，**建議**需要多練幾回。
 
 * `git init`
@@ -34,6 +36,14 @@
 * `git push -u <remote> <branch>`
 * `git pull`
 * `git pull --rebase`
+
+## Commit message
+
+Commit message 是給人看的，因此要盡可能讓不懂狀況的人看得懂。
+
+參考文章： https://blog.louie.lu/2017/03/21/%E5%A6%82%E4%BD%95%E5%AF%AB%E4%B8%80%E5%80%8B-git-commit-message/
+
+多數情況都會使用英文，可以避免編碼的錯誤，但使用中文也是可以的。
 
 ## .gitignore 建議
 
