@@ -16,7 +16,7 @@
 
 1. 開發流程／模式
 2. [Source Repository](/source-repository/README.md) - Git 相關規範：commit message、flow
-3. [Document](/document.md)
+3. [Documentation](/documentation.md)
 4. [Code Review](/code-review.md) - 如何進行 Code Review
 5. [Integration](/integration/README.md) - 如何整合，包括如何測試
 6. Delivery - 如何交付可用的軟體
