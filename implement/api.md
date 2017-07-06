@@ -11,8 +11,8 @@ ROA（Resource-oriented architecture）
 
 Keep your base URL simple and intuitive
  
-* Resource **必須**為複數名詞
-* URI **不建議**使用動詞，對於 API 的動作請用 HTTP Method
+* Resource **必須** 為複數名詞
+* URI **不建議** 使用動詞，對於 API 的動作請用 HTTP Method
 
 以下節錄自〈[REST API Design Rulebook][]〉說明 URI 使用動詞之時機
 
@@ -97,7 +97,7 @@ Avoid XML interface unless legacy requirement(s).
 
 ## Version
 
-API 版本設計的目的在於新舊並存，當發生**不可相容**的情況時，可減少客戶端的衝擊。  
+API 版本設計的目的在於新舊並存，當發生 **不可相容** 的情況時，可減少客戶端的衝擊。  
 
 API 版本設計將增加管理上的複雜度，請謹慎考量。
 
@@ -114,7 +114,7 @@ Accept: application/vnd.myapplication.user.v1+json
 ## Document
 [Swagger][] is the world’s largest framework of API developer tools for the OpenAPI Specification(OAS)
 
-### API basic information in swagger (**Must** have)
+### API basic information in swagger ( **Must** have)
 
 ```
 swagger: "2.0"
