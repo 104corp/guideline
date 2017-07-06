@@ -30,7 +30,7 @@ API 實作行為操作必須使用適當的 HTTP Method，並且必須遵守 Met
 * Safe Methods: Request 不造成資源狀態改變，因此為唯讀操作。
 [RFC-7231#4.2.1](https://tools.ietf.org/html/rfc7231#section-4.2.1) 定義 `GET` 、 `HEAD` 、 `OPTIONS` 、與 `TRACE` 四類請求 **必須** 為 safe (唯讀)。
 
-* Idempotent（冪等）Methods: Request 一次和多次造成的結果都相同，例如 `DELETE /article/1234` 的結果是 id 是 1234 的 article 資料被刪除，相同請求再執行多次的結果就是 id 是 1234 的 article 資料不存在，而不是造成更多的資料被刪除。
+* Idempotent（冪零）Methods: 重覆多次送出同樣的 Request 不改變結果，包含資源的最終狀態以及 HTTP 回應內容。這暗示瀏覽器與用戶端程式實作可以重送請求。例如 `DELETE /article/1234` 會刪除 id 為 1234 的 article，多次重送後該筆資料仍維持被刪除的狀態。
 Idempotent Methods 可以 Retry ，例如，如果 client 發送了一個 request ，在收到任何回應之前發生了斷線，則 client 可以建立新的連線並 retry idempotent request 。   
 [RFC-7231#4.2.2](https://tools.ietf.org/html/rfc7231#section-4.2.2)
 
