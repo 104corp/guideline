@@ -11,7 +11,6 @@ ROA（Resource-oriented architecture）
 
 Keep your base URL simple and intuitive
  
-* Resource **必須** 為複數名詞
 * URI **不建議** 使用動詞，對於 API 的動作請用 HTTP Method
 
 以下節錄自〈[REST API Design Rulebook][]〉說明 URI 使用動詞之時機
@@ -89,7 +88,7 @@ example:
 | 503 | Service Unavailable | 暫停服務 |
 | 504 | Gateway Timeout | 上游的伺服器逾時，一般是 gateway 或 proxy server 才會回傳此狀態碼 |
 
-### Response
+### Response Content-type
 
 JSON only
 
