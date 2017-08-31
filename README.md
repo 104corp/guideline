@@ -40,7 +40,7 @@
 
 * [PHP](/language/php/README.md)
 * [Java](/language/java/README.md)
-* JavaScript
+* [JavaScript](/language/javascript/README.md)
 
 ## 如何協作
 
