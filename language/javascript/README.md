@@ -20,7 +20,8 @@
 
 ## JavaScript lint
 
-   專案中，請自行加入 lint 檢察機制，原則上以 Airbnb 所以提供的 eslint 為主。
+   專案中，請自行加入 lint 檢查機制，原則上以 Airbnb 所以提供的 eslint 為主。
+
 
    * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)。
 
