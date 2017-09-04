@@ -1,13 +1,14 @@
-#Javscript
+# Javscript
 
   Javascript 開發規則：
     
    * [JavaScript style guide](#javascript-style-guide)。
    * [JavaScript lint](#javascript-lint)。
    * [JavaScript clean code](#javascript-clean-code)。
-   * [Naming Guide](#naming-guide)。
+   * [Naming guide](#naming-guide)。
    * [Documenting your projects](#documenting-your-projects-on-gitHub)。
    * [Develop and Pack tools](#develop-and-pack-tools)。
+   * [Git commit message Guide](#git-commit-message-guide)
    
    
 ## Javascript style guide
@@ -31,11 +32,15 @@
 
    使用 Ryan McDermott [JavaScript clead code](https://github.com/ryanmcdermott/clean-code-javascript) 。
    
-## Naming Guide
+## Naming guide
     
    命名上的簡單規則，幫助從命名及可理解專案組織結構。
    
    [Naming Guide](naming-guide.md)
+   
+## Git commit message guide
+
+   [Git Commit Message Guide](../../source-repository/git-commit-message-guide-f2e.md)
    
 ## Documenting your projects
 
@@ -51,6 +56,8 @@
 
    * React 0.15 以上開發，建議使用 React 官方的 [Create React apps](https://github.com/facebookincubator/create-react-app) 。
    * ES5 IE8 以上環境，[104-f2e-es6-pack-toolkit](https://github.com/104corp/104-f2e-es6-pack-toolkit) 。
+
+
 
 ## 如何進行測試
 
