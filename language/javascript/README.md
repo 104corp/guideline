@@ -8,6 +8,7 @@
    * [Naming guide](#naming-guide)。
    * [Documenting your projects](#documenting-your-projects-on-gitHub)。
    * [Develop and Pack tools](#develop-and-pack-tools)。
+   * [How to annotation your code](#how-to-annotation-your-code);
 
 
 ## Javascript style guide
@@ -54,7 +55,14 @@
    * ES5 IE8 以上環境，[104-f2e-es6-pack-toolkit](https://github.com/104corp/104-f2e-es6-pack-toolkit) 。
 
 
-
+## How to annotation your code
+   
+   如何註解你的程式碼： 
+   
+   * Google [Annotating JavaScript for the Closure Compiler - google](https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler)。
+   * ESDoc [ESDoc](https://esdoc.org/manual/feature.html)。
+   * JSDoc [JSDoc](http://usejsdoc.org/about-getting-started.html)。
+   
 ## 如何進行測試
 
    * 測試模組的拆分
