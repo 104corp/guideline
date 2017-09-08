@@ -1,15 +1,16 @@
-#Javscript
+
+# Javscript
 
   Javascript 開發規則：
-    
+
    * [JavaScript style guide](#javascript-style-guide)。
    * [JavaScript lint](#javascript-lint)。
    * [JavaScript clean code](#javascript-clean-code)。
-   * [Naming Guide](#naming-guide)。
+   * [Naming guide](#naming-guide)。
    * [Documenting your projects](#documenting-your-projects-on-gitHub)。
    * [Develop and Pack tools](#develop-and-pack-tools)。
-   
-   
+   * [How to annotation your code](#how-to-annotation-your-code);
+
 ## Javascript style guide
 
    使用 airbnb 提供的 es20155 、 es2016 、 React ， style guide 。
@@ -21,7 +22,6 @@
 ## JavaScript lint
 
    專案中，請自行加入 lint 檢查機制，原則上以 Airbnb 所以提供的 eslint 為主。
-
 
    * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)。
 
@@ -43,7 +43,6 @@
 
    [Documenting your projects on GitHub](https://guides.github.com/features/wikis/)。
    [18F Open Source Style Guide](https://open-source-guide.18f.gov/)。
-   
 
 ## Develop and Pack tools
 
@@ -52,6 +51,14 @@
    * React 0.15 以上開發，建議使用 React 官方的 [Create React apps](https://github.com/facebookincubator/create-react-app) 。
    * ES5 IE8 以上環境，[104-f2e-es6-pack-toolkit](https://github.com/104corp/104-f2e-es6-pack-toolkit) 。
 
+## How to annotation your code
+   
+   如何註解你的程式碼： 
+   
+   * Google [Annotating JavaScript for the Closure Compiler - google](https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler)。
+   * ESDoc [ESDoc](https://esdoc.org/manual/feature.html)。
+   * JSDoc [JSDoc](http://usejsdoc.org/about-getting-started.html)。
+   
 ## 如何進行測試
 
    * 測試模組的拆分
@@ -60,6 +67,4 @@
 ## 參考資料
 
    * [JavaScript design patterns 收集](https://github.com/Incubator-104-frontend/javascript-design-patterns-learning-club/blob/master/source.md) 。
-
-
 
