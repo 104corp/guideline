@@ -70,6 +70,11 @@ Closes #123, #245, #992
 ***Breaking changes 突破性變化***
 
 所有 breaking changes 必須在 footer 被描述，其中包含變更，理由和遷移說明。
+
+> ```補充說明```： breaking change 的意思：
+> 本次版本的 commit 代碼跟上一個版本，不兼容。
+> 必須被特別說明。
+
 ```
 BREAKING CHANGE:
 `port-runner` command line option has changed to `runner-port`, so that it is
