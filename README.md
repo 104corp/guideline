@@ -35,6 +35,7 @@
 ### 共同指南
 
 * Build tools
+  * [Makefile](/build/makefile.md)
 
 ### 語言細節
 
