@@ -1,0 +1,33 @@
+\documentclass[preview]{standalone}
+\usepackage{gitdags}
+\tikzgraphsset{%
+  nudge/.style={/tikz/shift={#1}},
+  nudge down/.style={nudge=(270:#1)},
+  nudge down/.default=1
+}
+
+\tikzset{global scale/.style={
+    scale=#1,
+    every node/.append style={scale=#1}
+  }
+}
+
+\begin{document}
+  \centering
+  \begin{tikzpicture}[global scale = 2]
+    \gitDAG[grow right sep = 2em]{
+      A -- B -- C
+    };
+    \gitbranch
+      {master}
+      {above=of C}
+      {C}
+    \gitbranch
+      {release/2018-02-01}
+      {right=of master}
+      {C}
+    \gitHEAD
+      {above=of master}
+      {master}
+  \end{tikzpicture}
+\end{document}
