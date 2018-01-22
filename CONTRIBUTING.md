@@ -18,7 +18,7 @@ Git Commit 的內容沒有特別規範，**建議**參考[這份文件](https://
 
 Guideline 所有文件都使用 [Markdown][] 撰寫。
 
-如果有引用圖片，請固定放入 `/images` 目錄下。
+如果有引用圖片，請放在與文件同層的 `/images` 目錄裡。
 
 ## Style
 

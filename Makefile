@@ -11,4 +11,3 @@ clean:
 	find . -name *.log -exec rm -f {} \;
 	find . -name *.pdf -exec rm -f {} \;
 	find . -name *.synctex.gz -exec rm -f {} \;
-
