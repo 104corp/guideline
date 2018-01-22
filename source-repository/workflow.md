@@ -1,11 +1,14 @@
 # Git 工作流程
 
-Git 分散式的特性，造就 Git 的工作流程有非常多種模式。不同的模式有不同的適用專案，以下將會介紹不同工作流程與適用場景，專案可視需求自由選擇使用下列介紹的任何一種流程，但**禁止**使用自行創造的工作流程。
+Git 分散式的特性，造就 Git 的工作流程有非常多種模式。不同的模式有不同的適用專案，以下將會介紹不同工作流程與適用場景，專案可視需求自由選擇使用下列介紹的任何一種流程，但**禁止**使用非下面所列出來的工作流程。
 
 * [Git Flow](#git-flow)
 * [GitHub Flow](#github-flow)
 * [GitLab Flow](#gitlab-flow)
 * [Trunk Based Development](#trunk-based-development)
+* [Simple Release Flow](workflow-simple-release.md) 
+
+> 如果有想到更好的流程可以解決某些問題，請在這份文件上更新後再開始採用。
 
 ## Git Flow
 
