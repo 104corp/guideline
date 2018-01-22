@@ -1,7 +1,5 @@
 ## Git Commit Template Sample
 
-
-
 ```
 <type>(<scope>): <subject>
 

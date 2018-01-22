@@ -49,7 +49,6 @@ Commit message 是給人看的，因此要盡可能讓不懂狀況的人看得�
 
 * [前端工程團隊建議規範](git-commit-message-guide-f2e.md)
 
-
 ## .gitignore 建議
 
 **建議**下面這些暫存檔都可以加入 `.gitignore` 檔裡，並寫註解方便未來參考。
