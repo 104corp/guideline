@@ -73,13 +73,13 @@ Thumbs.db
 Desktop.ini
 
 # NetBeans project files
-nbproject/*
+/nbproject/*
 
 # IntelliJ IDEA project files
-.idea
+/.idea
 
 # Eclipse project files
-.project
-.buildpath
-.settings
+/.project
+/.buildpath
+/.settings
 ```
