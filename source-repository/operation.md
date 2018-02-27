@@ -82,4 +82,8 @@ Desktop.ini
 /.project
 /.buildpath
 /.settings
+/.classpath
+
+# SVN files
+.svn
 ```
