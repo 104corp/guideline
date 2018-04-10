@@ -7,6 +7,7 @@ PHP 已有許多可信的第三方整理出建議的參考規範，如果有實�
 * HTTP Message: [PSR-7: HTTP Message Interface](http://www.php-fig.org/psr/psr-7/)
 * Hyperlink: [PSR-13: Hypermedia Links](http://www.php-fig.org/psr/psr-13/)
 * Dependency Injection: [PSR-11: Container Interface](https://www.php-fig.org/psr/psr-11/)
+* HTTP Handlers: [PSR-15: HTTP Server Request Handlers](https://www.php-fig.org/psr/psr-15/)
 
 還有一些雖然還在草稿或審查階段，但都是值得參考的：
 
