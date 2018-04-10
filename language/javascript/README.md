@@ -12,11 +12,11 @@ Javascript 開發規則目錄：
 
 ## Javascript style guide
 
-使用 Airbnb 提供的 es20155 、 es2016 、 React ， style guide 
+使用 Airbnb 提供的 style guide for ES6 / ES5 / React  
    
-* es2016 [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-* es2015 [Airbnb JavaScript Style Guide - es5](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
-* React [Airbnb JavaScript Style Guide - React](https://github.com/airbnb/javascript/tree/master/react)
+* ES6: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* ES5: [Airbnb JavaScript Style Guide - ES5](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
+* React: [Airbnb JavaScript Style Guide - React](https://github.com/airbnb/javascript/tree/master/react)
 
 ## JavaScript lint
 
@@ -54,7 +54,7 @@ code review 的檢查重點，有意義的命名。
    
 如何註解你的程式碼： 
 
-* Google [Annotating JavaScript for the Closure Compiler - google](https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler)
+* Google [Annotating JavaScript for the Closure Compiler](https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler)
 * ESDoc [ESDoc](https://esdoc.org/manual/feature.html)
 * JSDoc [JSDoc](http://usejsdoc.org/about-getting-started.html)
 
