@@ -69,8 +69,8 @@ Commit message 是給人看的，因此要盡可能讓不懂狀況的人看得�
 .Trashes
 
 # Global/Windows.gitignore
-Thumbs.db
 Desktop.ini
+Thumbs.db
 
 # NetBeans project files
 /nbproject/*
@@ -79,10 +79,10 @@ Desktop.ini
 /.idea
 
 # Eclipse project files
-/.project
 /.buildpath
-/.settings
 /.classpath
+/.project
+/.settings
 
 # SVN files
 .svn
