@@ -20,8 +20,9 @@
 4. [Code Review](/code-review.md) - 如何進行 Code Review
 5. [Integration](/integration/README.md) - 如何整合，包括如何測試
 6. Delivery - 如何交付可用的軟體
-7. Deployment - 如何佈署
-8. Report - 報告包括什麼
+7. Configure - 如何配置環境
+8. [Deployment](/deployment.md) - 如何部署
+9. Report - 報告包括什麼
 
 ## 實作指南
 
