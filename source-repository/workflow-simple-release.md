@@ -20,7 +20,7 @@
 
 ## 分支（Branch）種類
 
-參考 Git Flow ，此工作流程的分支有以下四種：
+參考 Git Flow，此工作流程的分支有以下四種：
 
 * `master` - 這代表了線上環境目前的程式碼，同時這也是主要分支（mainline）
 * `feature` - 開發用分支
@@ -65,7 +65,7 @@
 
 ### 調整內容
 
-如果因為某些因素，需要調整 staging 的內容時，也非常簡單。比方說， `feature/new-feature-2` 要移除，改成 `feature/new-feature-1` 。實際做法是，先把 `release/2018-02-01` 移除再重新建立，接著再依新的需求重新 merge 需要的 feature 分支即可：
+如果因為某些因素，需要調整 staging 的內容時，也非常簡單。比方說，`feature/new-feature-2` 要移除，改成 `feature/new-feature-1`。實際做法是，先把 `release/2018-02-01` 移除再重新建立，接著再依新的需求重新 merge 需要的 feature 分支即可：
 
     git branch -D release/2018-02-01
     git branch release/2018-02-01 master
@@ -73,7 +73,7 @@
     git merge --squash feature/new-feature-1
     git commit
 
-因為 `release/2018-02-01` 是屬於臨時分支， commit 的生成會依賴即有的 `feature` 分支，因此它隨時都能刪除。
+因為 `release/2018-02-01` 是屬於臨時分支，commit 的生成會依賴即有的 `feature` 分支，因此它隨時都能刪除。
 
 ## 上線環境
 
@@ -103,7 +103,7 @@
 
 ## 主分支更新
 
-當主分支因某些理由更新（Hotfix 或上線等），其他分支必須使用 rebase 更新：
+當主分支因某些理由更新（hotfix 或上線等），其他分支必須使用 rebase 更新：
 
 ![](images/simple-release-update-before.svg)
 

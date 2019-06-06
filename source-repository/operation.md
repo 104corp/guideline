@@ -41,9 +41,9 @@
 
 Commit message 是給人看的，因此要盡可能讓不懂狀況的人看得懂。
 
-參考文章： https://blog.louie.lu/2017/03/21/%E5%A6%82%E4%BD%95%E5%AF%AB%E4%B8%80%E5%80%8B-git-commit-message/
+> [參考文章](https://blog.louie.lu/2017/03/21/%E5%A6%82%E4%BD%95%E5%AF%AB%E4%B8%80%E5%80%8B-git-commit-message/)
 
-多數情況都會使用英文，可以避免編碼的錯誤，但使用中文也是可以的。
+多數情況都會使用英文，是為了避免編碼的錯誤，但也**可以**使用中文。
 
 規範： 
 

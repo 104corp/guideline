@@ -16,7 +16,7 @@ Git Flow 適用於正式發佈後，到 end user 時間**較長**的專案，如
 
 ## GitHub Flow
 
-[GitHub Flow][] 適用於正式發佈後，到 end user 時間**較短**的專案，如 Web 。
+[GitHub Flow][] 適用於正式發佈後，到 end user 時間**較短**的專案，如 Web。
 
 預設開發最新 branch 為 `master` 。任何修改**必須**開分支處理，最後合併回 `master` branch 的時候，需使用 `--no-ff` 參數。當合併發生任何衝突的時候，**必須**立即停止，先做 rebase 後再合併。
 
@@ -25,7 +25,7 @@ Git Flow 適用於正式發佈後，到 end user 時間**較長**的專案，如
 * 功能使用 `feature/` 開頭，如： `feature/add-some-function`
 * 修正 bug 使用 `hotfix/` 開頭，如： `hotfix/fix-some-function`
 
-當要合併回 master 時，**建議**使用 GitHub pull request 功能，並做 code review 。 
+當要合併回 master 時，**建議**使用 GitHub pull request 功能，並做 code review。 
 
 ## Trunk Based Development
 
@@ -33,7 +33,7 @@ TBD 適用於共用服務或是共用函式庫。
 
 ## GitLab Flow
 
-GitLab Flow 適合用在多環境佈署的專案，如專案需要佈署 production / staging / testing 三種環境，或許就會適合使用 GitLab Flow 。
+GitLab Flow 適合用在多環境佈署的專案，如專案需要佈署 production / staging / testing 三種環境，或許就會適合使用 GitLab Flow。
 
 此外， GitLab Flow 也可以跟上述 workflow 並存，通常都是跟 TBD 並存。
 
