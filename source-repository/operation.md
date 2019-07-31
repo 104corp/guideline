@@ -53,6 +53,8 @@ Commit message 是給人看的，因此要盡可能讓不懂狀況的人看得�
 
 **建議**下面這些暫存檔都可以加入 `.gitignore` 檔裡，並寫註解方便未來參考。
 
+> 此列表是針對 104 Corp. 開發環境所做的建議。
+
 ```ignore
 # Global/Temp.gitignore
 *~
