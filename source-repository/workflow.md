@@ -12,11 +12,14 @@ Git 分散式的特性，造就 Git 的工作流程有非常多種模式。不�
 
 ## Git Flow
 
-Git Flow 適用於正式發佈後，到 end user 時間**較長**的專案，如 App 或是桌面軟體。
+Git Flow 適用情境：
+
+* 不需快速迭代的產品
+* 團隊多數成員對於 Git 不夠熟悉時
 
 ## GitHub Flow
 
-[GitHub Flow][] 適用於正式發佈後，到 end user 時間**較短**的專案，如 Web。
+[GitHub Flow][] 適用於需快速迭代的產品。
 
 預設開發最新 branch 為 `master` 。任何修改**必須**開分支處理，最後合併回 `master` branch 的時候，需使用 `--no-ff` 參數。當合併發生任何衝突的時候，**必須**立即停止，先做 rebase 後再合併。
 
@@ -29,13 +32,13 @@ Git Flow 適用於正式發佈後，到 end user 時間**較長**的專案，如
 
 ## Trunk Based Development
 
-TBD 適用於共用服務或是共用函式庫。
+*Trunk Based Development* 簡稱 TBD，對團隊成員程式、版控等技術能力要求較高。但相對地，它同時擁有穩定與快速開發的好處。
 
 ## GitLab Flow
 
 GitLab Flow 適合用在多環境佈署的專案，如專案需要佈署 production / staging / testing 三種環境，或許就會適合使用 GitLab Flow。
 
-此外， GitLab Flow 也可以跟上述 workflow 並存，通常都是跟 TBD 並存。
+此外，GitLab Flow 也可以跟上述 workflow 並存，通常都是跟 TBD 並存。
 
 ## 參考資料
 
