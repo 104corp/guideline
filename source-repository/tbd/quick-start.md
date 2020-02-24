@@ -1,6 +1,12 @@
 # 五分鐘了解什麼是 Trunk Based Development
 
-[Trunk Based Development](https://trunkbaseddevelopment.com/)（以下簡稱 TBD）是一個開發流程，也是 Google、Facebook、Microsoft Office 等，知名的企業所使用的開發流程。
+[Trunk Based Development](https://trunkbaseddevelopment.com/)（以下簡稱 TBD）是一個開發流程，同時也是 [Google][]、[Facebook][]、[Microsoft][] 等知名的企業所採用的開發流程。
+
+[Google]: https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext
+[Facebook]: https://engineering.fb.com/core-data/scaling-mercurial-at-facebook/
+[Microsoft]: https://paulhammant.com/2014/04/03/microsofts-trunk-based-development/
+
+## 核心觀念
 
 > Branches create distance between developers and we do not want that
 >
@@ -15,7 +21,7 @@ TBD 提出來一個核心觀念，簡單來說就是：開分支會增加距離�
 * 合併時，有可能很難合併
 * 合併後，有可能會破壞意想不到的東⻄
 
-這此問題會隨著時間，讓影響範圍越來越大，因此如何減少這個問題，是 TBD 所在關注的重點。
+這此問題會隨著時間，讓影響範圍越來越大。要如何減少距離，正是 TBD 所關注的重點。
 
 ## 如何確保 commit 的品質
 
@@ -25,7 +31,7 @@ TBD 提出來一個核心觀念，簡單來說就是：開分支會增加距離�
 * 持續整合（Continuous Integration）
 * 持續交付（Continuous Delivery）
 
-如果審核通過進主幹分支，卻發生問題，則必須立即修正，或還原（rollback）。
+如果審核通過進主幹分支，卻發生問題，則必須立即修正或還原（rollback）。
 
 ## 發布版本（release）
 
@@ -49,3 +55,14 @@ v1 -> v2 -> v3 -> v4 -> trunk
 3. tag
 
 通常 trunk 更新可以觸發部署到測試機，而 tag 則是可以觸發部署正式機。實際做法可依團隊需求做適當的調整。
+
+## 開發人員的實踐
+
+TBD 觀念很單純，但需要開發人員的實踐。這並不是那麼容易，如：
+
+* 頻繁提交與同步程式碼
+* 每個 commit 都要能發布
+* 必須要有自動化測試
+* Commit 大小不好控制
+
+這些實踐還是需要考驗開發人員的基本程式功力，如「每個 commit 都要能發布」，意味著程式架構必須要有好的擴展能力，才有辦法減少新的程式碼對舊的程式碼影響，而這也是 SOLID 提到的[開關原則](https://ithelp.ithome.com.tw/articles/10192105)。
