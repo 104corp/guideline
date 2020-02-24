@@ -34,6 +34,8 @@ Git Flow 適用情境：
 
 *Trunk Based Development* 簡稱 TBD，對團隊成員程式、版控等技術能力要求較高。但相對地，它同時擁有穩定與快速開發的好處。
 
+* [五分鐘了解什麼是 Trunk Based Development](tbd/quick-start.md)
+
 ## GitLab Flow
 
 GitLab Flow 適合用在多環境佈署的專案，如專案需要佈署 production / staging / testing 三種環境，或許就會適合使用 GitLab Flow。
